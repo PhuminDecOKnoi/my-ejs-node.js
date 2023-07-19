@@ -4,6 +4,10 @@
     </head>
     <body>
         <p>
+            <% let y = new Date().getFullYear() %> <!-- เขียน Javascript แทรก HTML ด้วย <% %> -->
+            พ.ศ.<%= y+543 %>
+        </p>
+        <p>
             firstname: <%= firstname %> <hr/>
             lastname: <%= lastname %> <hr/>
             address: <%= address %> 
