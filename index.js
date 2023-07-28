@@ -4,7 +4,7 @@ const app = express();
 
 app.set('view engine','ejs'); // ตั้งค่าให้เป็น engine สำหรับรันเท็มเพลต
 
-app.get('/',(request ,response)=>{
+app.get('/person',(request ,response)=>{
     response.render('person',{ // person = ชื่อไฟล์ veiws/person.ejs
         firstname : 'Jame',
         lastname: 'Bond',
@@ -14,4 +14,4 @@ app.get('/',(request ,response)=>{
     });
 });
 
-app.listen(8088);
+app.listen(8080);
